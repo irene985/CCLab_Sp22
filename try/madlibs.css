@@ -7,7 +7,7 @@ body{
     overflow-y: hidden;
     background: rgb(131,234,241);
     background: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Kalam', sans-serif;
     display: flex;
     align-items: center;
 }

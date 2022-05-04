@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./madlibs.css">
     <title>Irenie's Mad Libs</title>
 </head>
@@ -20,7 +20,7 @@
 
         <main>
             <!-- Main MadLibs Form Input Area -->
-            <form id="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)">
+            <form id="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)" method="get">
                 <section id="madlibs-inputs">
                     <div class="input-group">
                         <label for="name_1">name</label>
@@ -92,20 +92,18 @@
                         <input type="text" id="school" name="school" required> 
                     </div>
                 </section>
-                
+                <!-- what makes the sotry submit -->
                 <section id="madlibs-submit">
-                    <button type="submit">
-                        Generate
-                    </button>
+                    <input type="submit" type="submit" form="madlibs-form" value="Generate!">
                 </section>
             </form>
-
+            <!-- Hides the big story so it doesnt appear beforehand -->
             <section id="completed-story" class="hide"></section>
         </main>
     </div>
     
     
     <!-- JS Script inclusion -->
-    <script src="./madlibs.js"></script>
+    <script src="mablibs.js"></script>
 </body>
 </html>

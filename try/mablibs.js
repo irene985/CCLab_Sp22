@@ -1,13 +1,17 @@
 
 
+//gets all the things I called back in HTML
 const madLibsForm = document.getElementById('madlibs-form');
 const storySection = document.getElementById('completed-story');
+const generateStory = document.getElementById('generate');
+
 
 const submitMadLibs = (event) => {
     //required to prevent the form from reloading on submit
     event.preventDefault();
     madLibsForm.classList.add('hide');
 
+    //calls the form and the unser inputs from those forms
     const form = new FormData(event.target);
     const userSubmission = Object.fromEntries(form);
 
@@ -24,17 +28,18 @@ const submitMadLibs = (event) => {
         My weakness is eating <span class="inserted-text">${userSubmission.food}</span>. They are gross!! Keep that away from me!
         I save the world every night. But when I wake up in the morning, I go back to my normal 
         life at <span class="inserted-text">${userSubmission.school}</span> school.</p>`;
-
+    
+    //removes the hide part when the story is submitted to allow everyoneto see it
     storySection.innerHTML += story;
     storySection.classList.remove('hide');
 
+    //resets the oage so you can do the madlib again (got help for resetting on slackoverflow)
     let resetButton = `
         <button id="madlibs-reset" onclick="resetMadLibs()">Play Again</button>
     `;
     storySection.innerHTML += resetButton;
 }
-
-const resetMadLibs = () => {
+    const resetMadLibs = () => {
     storySection.classList.add('hide');
     storySection.innerHTML = '';
     madLibsForm.reset();
