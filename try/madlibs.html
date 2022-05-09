@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./madlibs.css">
     <title>Irenie's Mad Libs</title>
 </head>
+
+
 <body>
     <div class="container">
         <header id="intro" class="center">
@@ -38,7 +44,7 @@
                     </div>
     
                     <div class="input-group">
-                        <label for="verb_1"> verb/thing</label>
+                        <label for="verb_1"> adverb</label>
                         <input type="text" id="verb_1" name="verb_1" required> 
                     </div>
                 
@@ -63,17 +69,17 @@
                     </div>
     
                     <div class="input-group">
-                        <label for="verb_2">verb</label>
+                        <label for="verb_2">verb ending in -ing</label>
                         <input type="text" id="verb_2" name="verb_2" required> 
                     </div>
                    
                     <div class="input-group">
-                        <label for="verb_3">verb</label>
+                        <label for="verb_3">verb ending in -ing</label>
                         <input type="text" id="verb_3" name="verb_3" required> 
                     </div>
     
                     <div class="input-group">
-                        <label for="verb_4">verb</label>
+                        <label for="verb_4">verb ending in -ing</label>
                         <input type="text" id="verb_4" name="verb_4" required> 
                     </div>
     
@@ -92,18 +98,24 @@
                         <input type="text" id="school" name="school" required> 
                     </div>
                 </section>
+               
                 <!-- what makes the sotry submit -->
                 <section id="madlibs-submit">
                     <input type="submit" type="submit" form="madlibs-form" value="Generate!">
                 </section>
+           
             </form>
-            <!-- Hides the big story so it doesnt appear beforehand -->
+            <!-- Hides so it doesnt appear beforehand -->
             <section id="completed-story" class="hide"></section>
+            <section id="mySketch" class="hide">  </section>
+            <script id="mySketch" src="sketch.js"></script>
         </main>
     </div>
     
     
     <!-- JS Script inclusion -->
     <script src="mablibs.js"></script>
+    
+    <script id="mySketch" src="sketch.js"></script>
 </body>
 </html>
