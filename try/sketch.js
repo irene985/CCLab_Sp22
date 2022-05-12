@@ -6,7 +6,7 @@ const drawSection = document.getElementById('mySketch');
 
 function setup() {
   canvas = createCanvas(400, 405);
-  canvas.position(1950,650);
+  canvas.position(1750,650);
   textSize(44);
   text("Draw Your Story!", 10, 80);
   textSize(18);
@@ -28,6 +28,29 @@ function doubleClicked () {
 }
 
 function draw() {
+ // calling .value() on the element will give you
+  // the elements current value
+  let name = elem.value();
+  console.log('User entered name', name);
+
+  elem = select('#favorite_color');
+  let favorite_color = elem.value();
+  console.log('Their favorite color is', favorite_color);
+
+  background(favorite_color);
+  
+  // we can also write to html elements from p5 like so
+  let text = random(['Howdy', 'Hello', 'Hi', 'Hallo']) + ' ' + name;
+  elem = select('#output');
+
+  // calling .html() on the element will set its content
+  // to whatever you give it as the parameter
+  elem.html(text);
+  <select id="favorite_color">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
 //defining drawing functions on the keyboard
   if (keyIsPressed) {
     if (keyCode == 66) {
