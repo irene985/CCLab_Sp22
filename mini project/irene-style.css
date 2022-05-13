@@ -5,7 +5,7 @@ box-sizing:border-box;
 html{
   margin: 0;
   padding: 0;
-background-color:rgb(197, 230, 250);
+  background-color:rgb(197, 230, 250);
 }
 
 body{ 
@@ -40,64 +40,9 @@ h3{
  color: tan;
 }
 
-/*
-.title{
-  text-align:center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-shadow: 3px 5px 2px #ffeedeb3;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 200px;
-}
-.wrapper {
-  margin: 0 auto;
-  width: 1000px;
-}
-
-.img-pink {
-  width: 800px;
-  height: 400px;
-  background-position: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.background-image {
-  margin: 0;
-  padding: 0;
-  background-image: url(img/pink-bg.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 200px;
-  position: relative;
-  text-align: center;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  font-family: 'Satisfy', cursive;
-  color: rgba(255, 255, 255, 0.553);
-  text-shadow: 1px .5px .2px #ac48d0b3;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.553);
-  font-size: 100px;
-  line-height: 62px;
-  font-family: 'Satisfy', cursive;
-  text-shadow: 3px 5px 2px #ac48d0b3;
-}*/
 
 .button {
+  transform: translate(25%, -40%);
   position: fixed;
   top: 40%;
   right: 10px;
@@ -112,8 +57,6 @@ h3{
   display: inline-block;
   font-size: 23px;
   margin: 4px 2px;
-  cursor: pointer;
-  transform: translate(25%, -40%);
   height: 70px;
   width: 200px;
   border-radius: 150px 150px 0 0;
@@ -136,11 +79,11 @@ h3{
 
 #introbutton{
   top:40%;
-  right:150px;
+  right: 150px;
 }
 
 #instruction{
-    top:50%;
+  top:50%;
   text-align: center;
   font-size: larger;
   color: aliceblue;
@@ -152,37 +95,3 @@ h3{
   padding-top: -50px;
   
 }
-
-
-
-/*.header1 {
-  text-align:center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: rgb(255, 255, 255);
-  font-size: 75px;
-  line-height: 22px;
-  font-family:'Satisfy', cursive;
-  text-shadow: 3px 5px 2px #bf73dbb3;
-}
-.par1 {
-  color: rgb(255, 255, 255);
-  margin-right: 50px;
-  margin-left: 50px;
-  font-size: 25px;
-  text-align: center;
-}
-
-.wrapper2 {
-  margin: 0 auto;
-  width: 1000px;
-}
-
-.grid-img {
-  width: 500px;
-  height: 500px;
-  background-position: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}*/
